@@ -1,0 +1,296 @@
+html {
+    font-size: 16px;
+    color: #333;
+    
+}
+body{
+    font-family: 'Montserrat', sans-serif;
+    background-color: #f0f0f0;
+}
+ul {
+    list-style-type: none;
+}
+a {
+    text-decoration: none;
+}
+@media screen and (min-width: 600px){
+    .container {
+        width: 70%;
+        margin: 0 auto;
+    }
+}
+
+
+/* Nav */
+
+header h1 {
+    display: none;
+}
+
+.topnav {
+    overflow: hidden;
+    
+    position: relative;
+    
+    
+}
+
+.topnav #navLinks{
+    display: none;
+    
+}
+
+.topnav a {
+    color: #333;
+    background: #f0f0f0;
+    font-size: 17px;
+    font-weight: 700;
+    display: block;
+    border-top: 1px solid #f0f0f0;
+    transition: all .3s;
+    text-align: center;
+    padding: 22px 0 22px 0;
+    
+}
+.topnav a.icon {
+    color: #333;
+    display: block;
+    position: absolute;
+    right: 0;
+    top: 25px;
+    font-size: 25px;
+   }
+   
+   #navLinks a {
+    border-bottom: 1px solid #f0f0f0;
+}
+#navLinks a:hover {
+    color: #0E76BC;
+    border-bottom: 1px solid #0E76BC ;
+    
+}
+.logo {
+    background-color: #f0f0f0;
+    text-align: left; 
+    height: auto;
+    
+}
+.logo img {
+    background-color: #f0f0f0;
+    width: auto;
+    height: 70px;
+}
+
+#title {
+    text-align: center;
+    padding: 32px 0;
+    background-color: #0E76BC;
+    color: #f2f2f2;
+    border-radius: 7px;
+}
+
+
+
+.img {
+    
+    cursor: pointer;
+    transition: 0.3s;
+    margin-bottom: 15px;
+    object-fit: contain;
+  }
+  .img-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+   
+    
+}
+
+  
+  .img:hover {opacity: 0.7;}
+  
+  
+  .modal {
+    display: none; 
+    position: fixed; 
+    z-index: 1; 
+    padding-top: 100px; 
+    left: 0;
+    top: 0;
+    width: 100%; 
+    height: 100%; 
+    overflow: auto; 
+    background-color: rgb(0,0,0); 
+    background-color: rgba(0,0,0,0.9);
+  }
+  
+  
+  .modal-content {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+  }
+  
+  
+  #caption {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+    text-align: center;
+    color: #ccc;
+    padding: 10px 0;
+    height: 150px;
+  }
+  
+  
+  .modal-content, #caption {
+    animation-name: zoom;
+    animation-duration: 0.6s;
+  }
+  
+  @keyframes zoom {
+    from {transform:scale(0)}
+    to {transform:scale(1)}
+  }
+  
+
+  .close {
+    position: absolute;
+    top: 15px;
+    right: 35px;
+    color: #f1f1f1;
+    font-size: 40px;
+    font-weight: bold;
+    transition: 0.3s;
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: #bbb;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  
+  
+  @media only screen and (max-width: 700px){
+    .modal-content {
+      width: 100%;
+    }
+  }
+
+  
+  .img-container img {
+      height: 300px;
+  }
+
+
+/* Footer */
+
+footer {
+    background-color: #222;
+    color: #f2f2f2;
+    
+}
+.footer-container h3{
+    font-size: 20px;
+}
+
+.footer-container {
+    width: 70%;
+    margin: 0 auto;
+    
+    padding: 30px 0;
+    
+}
+.footer-container img{
+ width: 200px;  
+ height: auto; 
+}
+
+.adress {
+    margin: 30px 0;;
+}
+.contact { 
+    margin: 0 auto;
+}
+
+
+
+  @media screen and (min-width: 600px) {
+    
+   
+    .topnav #navLinks {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+         border-top: 1px solid #333;
+         
+     }
+     #navLinks a {
+        border-bottom: 1px solid #f0f0f0;
+    }
+     .topnav a.icon {
+         display: none;
+     }
+     .topnav a{
+         border: none;
+     } 
+    
+    
+    header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    header h1 {
+        font-size: 32px;
+        display: block;
+    }
+    .logo{
+        height: auto;
+        background-color: white;
+        
+    }
+    .logo img{
+        display: inline;
+        padding: 20px;
+        width: auto;
+        height: 200px;
+    }
+   
+   
+    .adress {
+        margin: 0;
+    }
+    .footer-container{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 10px;
+    }
+
+ }
+
+ @media screen and (min-width: 900px) {
+    .img-container {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 20px;
+      
+       
+        
+    }
+    
+ }
+
+ @media screen and (min-width: 1200px) {
+    .img-container {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 20px;
+       
+       
+        
+    }
+ }
+ 

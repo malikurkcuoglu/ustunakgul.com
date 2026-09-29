@@ -1,0 +1,258 @@
+html {
+    font-size: 16px;
+    color: #333;
+    
+}
+body{
+    font-family: 'Montserrat', sans-serif;
+    background-color: #f0f0f0;
+}
+ul {
+    list-style-type: none;
+}
+a {
+    text-decoration: none;
+}
+@media screen and (min-width: 800px){
+    .container {
+        width: 70%;
+        margin: 0 auto;
+    }
+}
+
+
+/* Nav */
+
+header h1 {
+    display: none;
+}
+
+.topnav {
+    overflow: hidden;
+    
+    position: relative;
+    
+    
+}
+
+.topnav #navLinks{
+    display: none;
+    
+}
+
+.topnav a {
+    color: #333;
+    background: #f0f0f0;
+    font-size: 17px;
+    font-weight: 700;
+    display: block;
+    border-top: 1px solid #f0f0f0;
+    transition: all .3s;
+    text-align: center;
+    padding: 22px 0 22px 0;
+    
+}
+.topnav a.icon {
+    color: #333;
+    display: block;
+    position: absolute;
+    right: 0;
+    top: 25px;
+    font-size: 25px;
+   }
+   
+   #navLinks a {
+    border-bottom: 1px solid #f0f0f0;
+}
+#navLinks a:hover {
+    color: #0E76BC;
+    border-bottom: 1px solid #0E76BC ;
+    
+}
+.logo {
+    background-color: #f0f0f0;
+    text-align: left; 
+    height: auto;
+    
+}
+.logo img {
+    background-color: #f0f0f0;
+    width: auto;
+    height: 70px;
+}
+
+
+#title {
+    text-align: center;
+    padding: 32px 0;
+    background-color: #0E76BC;
+    color: #f2f2f2;
+    border-radius: 7px;
+}
+
+h2 {
+    
+    padding: 20px;
+    color: white;
+    background-color: #444;
+}
+.accordion-container{
+    margin-top: 30px;
+    
+}
+.accordion-container:last-child{
+    margin-bottom: 50px;
+}
+
+.accordion { 
+    background-color: #fff;
+    color: #333;
+    cursor: pointer;
+    padding: 20px;
+    width: 100%;
+    border: 1px solid #333;
+    text-align: left;
+    outline: none;
+    font-size: 16px;
+    transition: 0.4s;
+    font-weight: 700;
+  }
+  
+  .active {
+    background-color: #f2f2f2;
+    border-bottom: none;
+  }
+  .accordion:hover{
+    background-color: #f2f2f2;
+  }
+  
+  .accordion:after {
+    content: '\002B';
+    color: #000;
+    font-weight: bold;
+    float: right;
+    margin-left: 5px;
+  }
+  
+  .active:after {
+    content: "\2212";
+  }
+  
+  .panel {  
+    color: #333;
+    padding: 0 18px;
+    background-color: #fff;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+    border: 1px solid #333;
+    border-top: none;
+    border-bottom: none;
+    line-height: 1.4;
+    text-transform: uppercase;
+  }
+
+
+/* Footer */
+
+footer {
+    background-color: #222;
+    color: #f2f2f2;
+    
+}
+.footer-container h3{
+    font-size: 20px;
+}
+
+.footer-container {
+    width: 70%;
+    margin: 0 auto;
+    
+    padding: 30px 0;
+    
+}
+.footer-container img{
+ width: 200px;  
+ height: auto; 
+}
+
+.adress {
+    margin: 30px 0;;
+}
+.contact { 
+    margin: 0 auto;
+}
+
+
+
+
+@media screen and (min-width: 600px) {
+    .topnav #navLinks {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+        border-top: 1px solid #333;
+    }
+     #navLinks a {
+        border-bottom: 1px solid #f0f0f0;
+    }
+     .topnav a.icon {
+         display: none;
+     }
+     .topnav a{
+         border: none;
+     } 
+     .slides {
+        height: 500px; 
+    }
+    .slideshow-container {
+        margin-top: 12px;
+      }
+    header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    header h1 {
+        font-size: 32px;
+        display: block;
+    }
+    .logo{
+        height: auto;
+        background-color: white;
+        
+    }
+    .logo img{
+        display: inline;
+        padding: 20px;
+        width: auto;
+        height: 200px;
+    }
+    .card img {
+        height: 300px;
+    }
+    .cards-container {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 5px;    
+    }
+    .adress {
+        margin: 0;
+    }
+    .footer-container{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 10px;
+    }
+
+ }
+
+ @media screen and (min-width: 1000px) {
+    .cards-container {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 5px;    
+    }
+ }
+ .active-link {
+    background-color: #0E76BC;
+}
